@@ -1,0 +1,61 @@
+html { scroll-behavior: smooth; }
+        body { background-color: #121212; }
+        
+        .glass-nav {
+            background: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        .project-card {
+            background-color: #1e1e1e;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            border-color: #00d1ff;
+            box-shadow: 0 0 15px rgba(0, 209, 255, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .btn-primary-custom {
+            background-color: #00d1ff;
+            color: #000000;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            transform: scale(1.02);
+            background-color: #33daff;
+        }
+
+        .btn-secondary-custom {
+            background-color: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary-custom:hover {
+            border-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .input-custom {
+            background-color: #1a1a1a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e5e2e1;
+            transition: all 0.3s ease;
+        }
+
+        .input-custom:focus {
+            border-color: #00d1ff;
+            outline: none;
+            box-shadow: 0 0 0 1px rgba(0, 209, 255, 0.5);
+        }
+        
+        .tech-chip {
+            background-color: rgba(0, 209, 255, 0.1);
+            color: #00d1ff;
+        }
