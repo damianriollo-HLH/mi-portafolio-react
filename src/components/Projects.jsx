@@ -1,3 +1,5 @@
+import miProyectoImg from '../assets/img/image.png';
+
 export default function Projects() {
   return (
     <section className="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="projects">
@@ -11,7 +13,10 @@ export default function Projects() {
       {/* Proyecto Principal */}
       <div className="project-card rounded-xl overflow-hidden grid md:grid-cols-12 relative mb-gutter">
         <div className="md:col-span-7 h-64 md:h-auto bg-surface-container-high relative">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-luminosity hover:opacity-80 hover:mix-blend-normal transition-all duration-500"></div>
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity hover:opacity-80 hover:mix-blend-normal transition-all duration-500"
+            style={{ backgroundImage: `url(${miProyectoImg})` }}
+          ></div>
         </div>
         <div className="md:col-span-5 p-8 md:p-12 flex flex-col justify-center bg-surface-container/90 backdrop-blur-sm relative z-10">
           <p className="font-label-mono text-label-mono text-primary mb-2">Featured Project</p>
@@ -30,7 +35,7 @@ export default function Projects() {
               <span className="material-symbols-outlined">link</span>
               <span className="font-label-mono text-label-mono">Live Demo</span>
             </a>
-            <a className="text-on-surface hover:text-primary transition-colors flex items-center gap-2" href="#github">
+            <a className="text-on-surface hover:text-primary transition-colors flex items-center gap-2" href="https://github.com/damianriollo-HLH/events-apps" target="_blank">
               <span className="material-symbols-outlined">code</span>
               <span className="font-label-mono text-label-mono">GitHub</span>
             </a>
